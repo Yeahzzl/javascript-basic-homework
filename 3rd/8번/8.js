@@ -29,6 +29,11 @@ const 튜터님들 = [
   },
 ];
 
+튜터님들.forEach((tutor) => {
+  const result = `${tutor.이름}님의 담당반은 ${tutor.담당반}입니다.`;
+  console.log(result);
+});
+
 // 결과
 /*
 예병수님의 담당반은 A입니다.
