@@ -22,7 +22,17 @@ const 사람들 = [
 ];
 
 // 여기에 코드를 작성해주세요.
-const 나이10살더먹은사람들 = 사람들.?
+// const 나이10살더먹은사람들 = 사람들.map((plusTen) => {
+//   return {
+//     이름: plusTen.이름,
+//     나이: plusTen.나이 + 10,
+//     성별: plusTen.성별,
+//   };
+// });
+
+const 나이10살더먹은사람들 = 사람들.map((plusTen) => {
+  return { ...plusTen, 나이: `${plusTen.나이 + 10}` };
+});
 
 console.log(나이10살더먹은사람들);
 // 결과
